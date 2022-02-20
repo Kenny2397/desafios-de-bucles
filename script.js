@@ -34,7 +34,19 @@ function sigma(num) {
     console.log(arr);
     
 }
-// impares(20);
-// disminuir_multiplos_3(100);
-// secuencia(4, -3.5);
+function factorial(num) {
+    var product = 1;
+    var arr = "";
+    for (let index = 1; index <= num; index++) {
+        product = product * index;
+        arr = arr + index + " * "
+    }
+    arr = arr.substring(0, arr.length - 3);
+    console.log(product);
+    console.log(arr);
+}
+impares(20);
+disminuir_multiplos_3(100);
+secuencia(4, -3.5);
 sigma(100);
+factorial(12);
